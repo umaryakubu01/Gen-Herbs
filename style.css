@@ -15,6 +15,10 @@ body{
     padding-left: 5%;
     padding-right: 5%;
 }
+.menu-icon{
+    display: none;
+
+}
 
 img{
     width:100%;
@@ -357,6 +361,11 @@ footer hr{
 .image-box img{
     height:250px;
     object-fit:cover;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .wellbeing,
@@ -409,7 +418,11 @@ footer{
 
 @media screen and (max-width:768px){
 
-.navbar{
+body {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+    .navbar{
     flex-direction:column;
     gap:20px;
 }
@@ -422,6 +435,14 @@ footer{
     flex-wrap:wrap;
     justify-content:center;
     gap:15px;
+    display: none;
+}
+.menu-icon{
+    display: block;
+    cursor: pointer;
+    order: -1;
+    font-size: 35px;
+   
 }
 
 .hero{
